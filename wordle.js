@@ -1,4 +1,5 @@
-let Answer="abcde"
+let AnswerList=['abcde','white','color','eight','three']
+let Answer=AnswerList[Math.floor(Math.random()*(AnswerList.length-1))]
 document.querySelector('button').addEventListener('click',
 function(){
     let input =document.querySelectorAll('.input');
@@ -19,11 +20,11 @@ function(){
 }
 
 let template = `<div>
-    <input class="input">
-    <input class="input">
-    <input class="input">
-    <input class="input">
-    <input class="input">
+    <input class="input" maxlength="1">
+    <input class="input" maxlength="1">
+    <input class="input" maxlength="1">
+    <input class="input" maxlength="1">
+    <input class="input" maxlength="1">
 </div>`
 document.querySelector('body').insertAdjacentHTML
 ('beforeend',template)
