@@ -11,7 +11,12 @@ function(){
             input[i].style.background = "yellow"
         }else{
             input[i].style.background = "red"
-    }}
+        }
+
+        input[i].classList.remove('input')
+
+
+}
 
 let template = `<div>
     <input class="input">
